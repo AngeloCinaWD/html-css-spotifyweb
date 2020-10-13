@@ -4,7 +4,172 @@
   box-sizing: border-box;
 }
 
-.prova {
-  background: red;
-  height: calc(100vh - 100px)
+#container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+/* parte laterale sx */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  padding: 16px;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 100px);
+}
+
+#logo {
+  min-height: 50px;
+  background-color: grey;
+  margin: 10px 0;
+}
+
+#navbar {
+  min-height: 50px;
+  background-color: grey;
+  margin: 10px 0;
+}
+
+#playlist {
+  min-height: 50px;
+  background-color: grey;
+  flex-grow: 1;
+  margin: 10px 0;
+}
+
+#installer {
+  min-height: 50px;
+  background-color: grey;
+  margin: 10px 0;
+}
+
+#user {
+  min-height: 50px;
+  background-color: grey;
+  margin: 10px 0;
+}
+
+/* parte centrale */
+#album {
+  background-color: blue;
+  width: calc(100% - 240px);
+  height: calc(100vh - 100px);
+  margin-left: 240px;
+}
+
+#upgrade {
+  width: calc(100% - 240px) ;
+  height: 100px;
+  background-color: purple;
+  position: fixed;
+  top: 0;
+  left: 240px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#linkupgrade {
+  width: 240px;
+  margin: 10px;
+  background-color: pink;
+}
+
+#centrale {
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+#liste {
+  min-height: 100px;
+  margin: 10px;
+  background-color: purple;
+}
+
+#recenti {
+  min-height: 100px;
+  margin: 10px;
+  background-color: purple;
+}
+
+#create {
+  min-height: 100px;
+  margin: 10px;
+  background-color: purple;
+}
+
+#popolari {
+  min-height: 100px;
+  margin: 10px;
+  background-color: purple;
+}
+
+
+
+/* fondo pagina */
+#barra {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 100;
+  left: 0;
+}
+
+#infobrano {
+  width: 240px;
+  background-color: lightgreen;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#info {
+  width: 100%;
+  min-height: 10px;
+  background-color: yellow;
+}
+
+#player {
+  flex-grow: 1;
+  background-color: lightgreen;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#tasti {
+  width: 100%;
+  min-height: 10px;
+  background-color: yellow;
+}
+
+#scorrimento {
+  width: 100%;
+  min-height: 10px;
+  background-color: yellow;
+}
+
+#volume {
+  width: 240px;
+  background-color: lightgreen;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#comandi {
+  width: 100%;
+  min-height: 10px;
+  background-color: yellow;
 }
