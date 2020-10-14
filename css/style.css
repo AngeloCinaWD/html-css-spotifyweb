@@ -256,6 +256,11 @@ a {
   font-size: 9px;
 }
 
+#info2 .testo4:nth-of-type(2):hover, #info3 i:hover {
+  color: white;
+  cursor: pointer;
+}
+
 #info3 {
   width: 50px;
   text-align: right;
@@ -287,12 +292,17 @@ a {
 
 #tasti i {
   margin: 0 10px;
+  cursor: pointer;
 }
 
 #tasti i:nth-of-type(3) {
   font-size: 25px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+#tasti i:nth-of-type(3):hover {
+  transform: scale(1.3);
 }
 
 #scorrimento {
@@ -307,12 +317,31 @@ a {
   margin: 0 20px;
   background-color: #ae9f6f;
   border-radius: 2px;
+  position: relative;
 }
 
 #partialtime {
   width: 25%;
   border: 2px solid white;
   border-radius: 2px;
+}
+
+#partialtime:hover {
+  border-color: #ccff00;
+  cursor: pointer;
+}
+
+#partialtime span {
+  font-size: 20px;
+  position: absolute;
+  top: -12px;
+  left: 98px;
+  color: white;
+  display: none;
+}
+
+#partialtime:hover .ball {
+  display: initial;
 }
 
 /* comandi volume, schermo e impostazioni */
@@ -333,6 +362,7 @@ a {
 
 #comandi i {
   color:white;
+  cursor: pointer;
 }
 
 #volumebar {
@@ -340,10 +370,29 @@ a {
   width: 130px;
   background-color: #ae9f6f;
   border-radius: 2px;
+  position: relative;
 }
 
 #partialvolume {
   width: 25%;
   border: 2px solid white;
   border-radius: 2px;
+}
+
+#partialvolume:hover {
+  border-color: #ccff00;
+  cursor: pointer;
+}
+
+#partialvolume span {
+  font-size: 20px;
+  position: absolute;
+  top: -12px;
+  left: 30px;
+  color: white;
+  display: none;
+}
+
+#partialvolume:hover .ball {
+  display: initial;
 }
