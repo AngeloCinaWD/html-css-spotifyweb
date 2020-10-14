@@ -9,6 +9,36 @@ a {
   text-decoration: none;
 }
 
+.testo1 {
+  font-weight: 800;
+  font-size: 20px;
+  color: white;
+}
+
+.testo2 {
+  font-weight: 600;
+  font-size: 10px;
+  color: white;
+}
+
+.testo3 {
+  font-weight: 800;
+  font-size: 10px;
+  color: #ae9f6f;
+}
+
+.testo3b {
+  font-weight: 800;
+  font-size: 10px;
+  color: white;
+}
+
+.testo4 {
+  font-weight: 800;
+  font-size: 8px;
+  color: #ae9f6f;
+}
+
 #container {
   display: flex;
   justify-content: flex-start;
@@ -61,12 +91,14 @@ a {
 }
 
 /* parte centrale */
-#album {
-  background-color: blue;
+/* contenitore upgrade + centrale */
+#canzoni {
   width: calc(100% - 240px);
   height: calc(100vh - 100px);
   margin-left: 240px;
 }
+
+/* barra upgrade fissata in alto */
 
 #upgrade {
   width: calc(100% - 240px) ;
@@ -87,44 +119,73 @@ a {
 }
 
 #linkupgrade a {
-  color: white;
   border: 1px solid white;
   border-radius: 50px;
   padding: 10px 40px;
-  font-weight: 600;
-  font-size: 10px;
 }
+
+/* parte centrale con copertine degli album e generi musicali */
 
 #centrale {
-  margin-top: 100px;
+  padding: 90px 10px 10px 10px;
   overflow: hidden;
+  background-color: #121212;
 }
 
-#liste {
-  min-height: 100px;
-  margin: 10px;
-  background-color: purple;
+/* generi musicali */
+
+#generi {
+  display: flex;
+  justify-content: center;
 }
 
+.genere {
+  width: 100px;
+  text-align: center;
+}
+
+#evidenziato {
+  width: 30px;
+  border: 2px solid #ccff00;
+  margin-left: 35px;
+}
+
+/* liste create, recenti etc */
+
+/* liste recenti */
 #recenti {
-  min-height: 100px;
-  margin: 10px;
-  background-color: purple;
+  display: flex;
+  justify-content: flex-start;
 }
+
+.album {
+  text-align: center;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.copertina img {
+  width: 100%;
+  height: auto;
+}
+
+/* liste create */
 
 #create {
-  min-height: 100px;
-  margin: 10px;
-  background-color: purple;
+  display: flex;
+  justify-content: flex-start;
 }
+
+/* liste popolari */
 
 #popolari {
-  min-height: 100px;
-  margin: 10px;
-  background-color: purple;
+  display: flex;
+  justify-content: flex-start;
 }
 
-
+#popolari img {
+  border-radius: 50%;
+}
 
 /* fondo pagina */
 #barra {
