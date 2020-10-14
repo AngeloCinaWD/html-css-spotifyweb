@@ -5,6 +5,8 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+/* regole pagina */
+
 a {
   text-decoration: none;
 }
@@ -13,6 +15,7 @@ a {
   font-weight: 800;
   font-size: 20px;
   color: white;
+  margin-top: 30px;
 }
 
 .testo2 {
@@ -31,12 +34,18 @@ a {
   font-weight: 800;
   font-size: 10px;
   color: white;
+  margin-top: 10px;
 }
 
 .testo4 {
   font-weight: 800;
   font-size: 8px;
   color: #ae9f6f;
+  margin-top: 10px;
+}
+
+.testo3:hover {
+  color: white;
 }
 
 #container {
@@ -118,6 +127,10 @@ a {
   margin: 10px;
 }
 
+#linkupgrade:hover {
+  transform: scale(1.2);
+}
+
 #linkupgrade a {
   border: 1px solid white;
   border-radius: 50px;
@@ -129,7 +142,7 @@ a {
 #centrale {
   padding: 90px 10px 10px 10px;
   overflow: hidden;
-  background-color: #121212;
+  background-color: #101113;
 }
 
 /* generi musicali */
@@ -152,11 +165,13 @@ a {
 
 /* liste create, recenti etc */
 
-/* liste recenti */
-#recenti {
+#recenti, #create, #popolari {
   display: flex;
   justify-content: flex-start;
+  margin-top: 30px;
 }
+
+/* liste recenti */
 
 .album {
   text-align: center;
@@ -164,24 +179,33 @@ a {
   margin-right: 10px;
 }
 
+.copertina {
+  position: relative;
+}
+
+.cursorplay {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.copertina:hover .cursorplay {
+  display: initial;
+}
+
 .copertina img {
   width: 100%;
   height: auto;
 }
 
-/* liste create */
-
-#create {
-  display: flex;
-  justify-content: flex-start;
+.copertina:hover {
+  cursor: pointer;
 }
-
 /* liste popolari */
-
-#popolari {
-  display: flex;
-  justify-content: flex-start;
-}
 
 #popolari img {
   border-radius: 50%;
