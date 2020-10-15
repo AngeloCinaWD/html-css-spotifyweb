@@ -432,7 +432,7 @@ a:hover {
 
 #timebar {
   display: inline-block;
-  width: 400px;
+  width: 44%;
   margin: 0 20px;
   background-color: #b3b3b3;
   border-radius: 2px;
@@ -486,7 +486,7 @@ a:hover {
 
 #volumebar {
   display: inline-block;
-  width: 130px;
+  width: 54%;
   background-color: #b3b3b3;
   border-radius: 2px;
   position: relative;
@@ -514,4 +514,20 @@ a:hover {
 
 #partialvolume:hover .ball {
   display: initial;
+}
+
+/* MEDIA QUERY */
+
+@media all and (min-width: 878px) and (max-width: 1439px) {
+  #recenti, #create, #popolari {
+    flex-wrap: wrap;
+  }
+
+  .album {
+    width: calc((100% - 40px) / 4 );
+  }
+
+  .album > .testo4 {
+    margin-bottom: 20px;
+  }
 }
