@@ -108,7 +108,7 @@ a:hover {
   height: auto;
 }
 
-svg path {
+.icona > a > svg path {
   fill: #b3b3b3;
 }
 
@@ -155,23 +155,60 @@ svg path {
   margin-bottom: 10px;
 }
 
-
-
 /* installer applicazione */
 
 #installer {
-  min-height: 50px;
-  background-color: grey;
   margin: 10px 0;
+  padding: 0 16px;
 }
+
+#appinstaller {
+  border-bottom: 1px solid #b3b3b3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#appinstaller > .icona {
+  width: 10%;
+}
+
+#downapp {
+  padding-bottom: 9px;
+}
+
 
 /* dati utente */
 
 #user {
-  min-height: 50px;
-  background-color: grey;
-  margin: 10px 0;
+  margin: 5px 0;
+  padding-left: 16px;
 }
+
+#profilo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#iconautente {
+  width: 15%;
+  margin-right: 8px;
+}
+
+#iconautente > a > svg {
+  width: 100%;
+  height: auto;
+  background-color: #b3b3b3;
+  border-radius: 50%;
+  padding: 0 3px;
+}
+
+#nome {
+  padding-bottom: 5px;
+}
+
+
 
 /* parte centrale */
 /* contenitore upgrade + centrale */
